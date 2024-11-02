@@ -5,10 +5,15 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { useSelector } from "react-redux";
 
 const Home = lazy(() => import("../Pages/Home"));
+const Auth = lazy(() => import("../Auth/Auth"));
 const router = createBrowserRouter([
   {
     path: "/fitness",
     element:  <Suspense fallback={'loading...'}><Home /></Suspense>,
+  },
+  {
+    path: "/login",
+    element:  <Suspense fallback={'loading...'}><Auth /></Suspense>,
   },
 ]);
 export default function AppRouter() {

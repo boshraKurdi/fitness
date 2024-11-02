@@ -26,31 +26,31 @@ export default function Header() {
 
           <ul className="navbar-list">
             <li>
-              <Link  to="/#home" className={value === 'dark' ? "navbar-link dark active" : 'navbar-link light active'}>
+              <Link  to="/fitness#home" className={value === 'dark' ? "navbar-link dark active" : 'navbar-link light active'}>
                 Home
               </Link>{" "}
             </li>
 
             <li>
-              <Link to="/#about" className={value === 'dark' ? "navbar-link dark" : 'navbar-link light'}>
+              <Link to="/fitness#about" className={value === 'dark' ? "navbar-link dark" : 'navbar-link light'}>
                 About Us
               </Link>{" "}
             </li>
 
             <li>
-              <Link to="/#class" className={value === 'dark' ? "navbar-link dark" : 'navbar-link light'}>
+              <Link to="/fitness#class" className={value === 'dark' ? "navbar-link dark" : 'navbar-link light'}>
                 classs
               </Link>
             </li>
 
             <li>
-              <Link  to="/#blog" className={value === 'dark' ? "navbar-link dark" : "navbar-link light"}>
+              <Link  to="/fitness#blog" className={value === 'dark' ? "navbar-link dark" : "navbar-link light"}>
                 Blog
               </Link>
             </li>
 
             <li>
-              <Link  to="/" className={value === 'dark' ? "navbar-link dark" : "navbar-link light"}>
+              <Link  to="/fitness" className={value === 'dark' ? "navbar-link dark" : "navbar-link light"}>
                 Contact Us
               </Link>
             </li>
