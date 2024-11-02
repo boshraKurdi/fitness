@@ -1,24 +1,25 @@
 {
   "files": {
     "main.css": "/fitness/static/css/main.f99bbbd7.css",
-    "main.js": "/fitness/static/js/main.fb205d9b.js",
-    "static/css/385.2be45da9.chunk.css": "/fitness/static/css/385.2be45da9.chunk.css",
-    "static/js/385.4a79b20a.chunk.js": "/fitness/static/js/385.4a79b20a.chunk.js",
+    "main.js": "/fitness/static/js/main.8852db34.js",
+    "static/css/656.aaaed48e.chunk.css": "/fitness/static/css/656.aaaed48e.chunk.css",
+    "static/js/656.e3fe11cf.chunk.js": "/fitness/static/js/656.e3fe11cf.chunk.js",
     "static/js/453.6c1b08df.chunk.js": "/fitness/static/js/453.6c1b08df.chunk.js",
     "static/js/917.10c272f8.chunk.js": "/fitness/static/js/917.10c272f8.chunk.js",
     "static/media/image.png": "/fitness/static/media/image.441a010c8444d35e3e7b.png",
+    "static/media/about-coach.jpg": "/fitness/static/media/about-coach.dff9558d0b5588f14857.jpg",
     "static/media/h-circle-one.png": "/fitness/static/media/h-circle-one.91a186ec47416b1013ae.png",
     "static/media/h-circle-two.png": "/fitness/static/media/h-circle-two.97ce171f72aaf06b338c.png",
     "index.html": "/fitness/index.html",
     "main.f99bbbd7.css.map": "/fitness/static/css/main.f99bbbd7.css.map",
-    "main.fb205d9b.js.map": "/fitness/static/js/main.fb205d9b.js.map",
-    "385.2be45da9.chunk.css.map": "/fitness/static/css/385.2be45da9.chunk.css.map",
-    "385.4a79b20a.chunk.js.map": "/fitness/static/js/385.4a79b20a.chunk.js.map",
+    "main.8852db34.js.map": "/fitness/static/js/main.8852db34.js.map",
+    "656.aaaed48e.chunk.css.map": "/fitness/static/css/656.aaaed48e.chunk.css.map",
+    "656.e3fe11cf.chunk.js.map": "/fitness/static/js/656.e3fe11cf.chunk.js.map",
     "453.6c1b08df.chunk.js.map": "/fitness/static/js/453.6c1b08df.chunk.js.map",
     "917.10c272f8.chunk.js.map": "/fitness/static/js/917.10c272f8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f99bbbd7.css",
-    "static/js/main.fb205d9b.js"
+    "static/js/main.8852db34.js"
   ]
 }
