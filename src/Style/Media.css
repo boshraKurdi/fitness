@@ -189,12 +189,7 @@
     display: block;
   }
 
-  .header {
-    background-color: transparent;
-    box-shadow: none;
-    padding-block: 30px;
-    transition: var(--transition-1);
-  }
+
 
   .header.active {
     transform: translateY(-100%);

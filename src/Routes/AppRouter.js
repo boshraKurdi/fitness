@@ -3,17 +3,17 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { useSelector } from "react-redux";
-
+import Loading from "../components/Loading/Loading";
 const Home = lazy(() => import("../Pages/Home"));
 const Auth = lazy(() => import("../Auth/Auth"));
 const router = createBrowserRouter([
   {
     path: "/fitness",
-    element:  <Suspense fallback={'loading...'}><Home /></Suspense>,
+    element:  <Suspense fallback={<Loading />}><Home /></Suspense>,
   },
   {
     path: "/login",
-    element:  <Suspense fallback={'loading...'}><Auth /></Suspense>,
+    element:  <Suspense fallback={<Loading />}><Auth /></Suspense>,
   },
 ]);
 export default function AppRouter() {
