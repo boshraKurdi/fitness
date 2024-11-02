@@ -1,10 +1,21 @@
 import "./About.css";
 
 import About_5 from '../../../img/about-coach.jpg'
+import About_1 from '../../../img/a-banner.png'
 export default function About() {
   return (
     <section className="section about" id="about" aria-label="about">
       <div className="container">
+      <div className="about-banner has-after">
+          <img
+            src={About_1}
+            width="660"
+            height="648"
+            loading="lazy"
+            alt="about banner"
+            className="w-100"
+          />
+        </div>
 
         <div className="about-content">
           <p className="section-subtitle" style={{margin: '0'}}>About Us</p>
