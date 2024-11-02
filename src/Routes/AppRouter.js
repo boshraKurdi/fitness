@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 const Home = lazy(() => import("../Pages/Home"));
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/fitness",
     element:  <Suspense fallback={'loading...'}><Home /></Suspense>,
   },
 ]);
