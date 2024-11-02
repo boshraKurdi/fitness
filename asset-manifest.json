@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fitness/static/css/main.f99bbbd7.css",
-    "main.js": "/fitness/static/js/main.c4236bcd.js",
+    "main.js": "/fitness/static/js/main.fb205d9b.js",
     "static/css/385.2be45da9.chunk.css": "/fitness/static/css/385.2be45da9.chunk.css",
     "static/js/385.4a79b20a.chunk.js": "/fitness/static/js/385.4a79b20a.chunk.js",
     "static/js/453.6c1b08df.chunk.js": "/fitness/static/js/453.6c1b08df.chunk.js",
@@ -11,7 +11,7 @@
     "static/media/h-circle-two.png": "/fitness/static/media/h-circle-two.97ce171f72aaf06b338c.png",
     "index.html": "/fitness/index.html",
     "main.f99bbbd7.css.map": "/fitness/static/css/main.f99bbbd7.css.map",
-    "main.c4236bcd.js.map": "/fitness/static/js/main.c4236bcd.js.map",
+    "main.fb205d9b.js.map": "/fitness/static/js/main.fb205d9b.js.map",
     "385.2be45da9.chunk.css.map": "/fitness/static/css/385.2be45da9.chunk.css.map",
     "385.4a79b20a.chunk.js.map": "/fitness/static/js/385.4a79b20a.chunk.js.map",
     "453.6c1b08df.chunk.js.map": "/fitness/static/js/453.6c1b08df.chunk.js.map",
@@ -19,6 +19,6 @@
   },
   "entrypoints": [
     "static/css/main.f99bbbd7.css",
-    "static/js/main.c4236bcd.js"
+    "static/js/main.fb205d9b.js"
   ]
 }
