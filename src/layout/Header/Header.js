@@ -7,12 +7,17 @@ import { useDispatch, useSelector } from "react-redux";
 import Components from "../../Style/Components/Components";
 import { useTheme } from "@mui/material";
 import { SetMode } from "../../Store/Mode/ModeSlice";
+import { useState } from "react";
 export default function Header() {
+  const [ open , setOpen ] = useState(false)
   const theme = useTheme()
   const { MyComponentHeader} = Components();
   const dispatch = useDispatch();
   // change mode 
   const { value } = useSelector((state) => state.mode)
+  function HandelNav(){
+    setOpen(prev => !prev);
+  }
   return (
     <MyComponentHeader className="header active">
       <div className="container">
@@ -21,41 +26,39 @@ export default function Header() {
           <span style={{color:theme.palette.primary.title}} className="span">Fitlife</span>
         </a>
 
-        <nav className="navbar">
-          <button className="nav-close-btn"></button>
-
+        <nav className={open ? (value === 'dark' ? 'navbar open dark' : 'navbar open light') : (value === 'dark'? "navbar dark" : 'navbar light')}>
           <ul className="navbar-list">
-            <li>
+            <li onClick={HandelNav}>
               <Link  to="/fitness#home" className={value === 'dark' ? "navbar-link dark active" : 'navbar-link light active'}>
                 Home
               </Link>{" "}
             </li>
 
-            <li>
+            <li onClick={HandelNav}>
               <Link to="/fitness#about" className={value === 'dark' ? "navbar-link dark" : 'navbar-link light'}>
                 About Us
               </Link>{" "}
             </li>
 
-            <li>
+            <li onClick={HandelNav}>
               <Link to="/fitness#class" className={value === 'dark' ? "navbar-link dark" : 'navbar-link light'}>
                 classs
               </Link>
             </li>
 
-            <li>
+            <li onClick={HandelNav}>
               <Link  to="/fitness#blog" className={value === 'dark' ? "navbar-link dark" : "navbar-link light"}>
                 Blog
               </Link>
             </li>
 
-            <li>
+            <li onClick={HandelNav}>
               <Link  to="/fitness" className={value === 'dark' ? "navbar-link dark" : "navbar-link light"}>
                 Contact Us
               </Link>
             </li>
-            <li>
-            <Select value={value} onChange={(event) => dispatch(SetMode(event.target.value))}>
+            <li onClick={HandelNav}>
+            <Select style={{display: 'flex' ,width: 'fit-content' , margin: 'auto'}} value={value} onChange={(event) => dispatch(SetMode(event.target.value))}>
               <MenuItem style={{color:theme.palette.primary.title}} value="light">light</MenuItem>
               <MenuItem style={{color:theme.palette.primary.title}} value="dark">dark</MenuItem>
             </Select>
@@ -65,7 +68,7 @@ export default function Header() {
         <Link to="/login" className="btn btn-secondary">
           Join Now
         </Link>
-        <button className="nav-open-btn">
+        <button onClick={HandelNav} className="nav-open-btn">
           <span className="line"></span>
           <span className="line"></span>
           <span className="line"></span>
