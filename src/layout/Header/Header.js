@@ -28,36 +28,36 @@ export default function Header() {
 
         <nav className={open ? (value === 'dark' ? 'navbar open dark' : 'navbar open light') : (value === 'dark'? "navbar dark" : 'navbar light')}>
           <ul className="navbar-list">
-            <li onClick={HandelNav}>
+            <li onClick={()=>{setOpen(false)}}>
               <Link  to="/fitness#home" className={value === 'dark' ? "navbar-link dark active" : 'navbar-link light active'}>
                 Home
               </Link>{" "}
             </li>
 
-            <li onClick={HandelNav}>
+            <li onClick={()=>{setOpen(false)}}>
               <Link to="/fitness#about" className={value === 'dark' ? "navbar-link dark" : 'navbar-link light'}>
                 About Us
               </Link>{" "}
             </li>
 
-            <li onClick={HandelNav}>
+            <li onClick={()=>{setOpen(false)}}>
               <Link to="/fitness#class" className={value === 'dark' ? "navbar-link dark" : 'navbar-link light'}>
                 classs
               </Link>
             </li>
 
-            <li onClick={HandelNav}>
+            <li onClick={()=>{setOpen(false)}}>
               <Link  to="/fitness#blog" className={value === 'dark' ? "navbar-link dark" : "navbar-link light"}>
                 Blog
               </Link>
             </li>
 
-            <li onClick={HandelNav}>
+            <li onClick={()=>{setOpen(false)}}>
               <Link  to="/fitness" className={value === 'dark' ? "navbar-link dark" : "navbar-link light"}>
                 Contact Us
               </Link>
             </li>
-            <li onClick={HandelNav}>
+            <li onClick={()=>{setOpen(false)}}>
             <Select style={{display: 'flex' ,width: 'fit-content' , margin: 'auto'}} value={value} onChange={(event) => dispatch(SetMode(event.target.value))}>
               <MenuItem style={{color:theme.palette.primary.title}} value="light">light</MenuItem>
               <MenuItem style={{color:theme.palette.primary.title}} value="dark">dark</MenuItem>
