@@ -7,9 +7,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { Link } from "react-router-dom";
 export default function Plan() {
   return (
-    <section className="section blog" id="blog" aria-label="blog">
+    <section className="section blog" id="plan" aria-label="blog">
       <div className="container" style={{ position: "relative" }}>
         <Heading title="Our Plans" subTitle="muscle" />
         <ul className="blog-list has-scrollbar">
@@ -51,16 +52,16 @@ export default function Plan() {
 
                   <div className="card-content">
                     <h3 className="h3">
-                      <a href="index" className="card-title">
+                      <Link to="#" className="card-title">
                         Plan Title
-                      </a>
+                      </Link>
                     </h3>
 
-                    <p className="card-text">lorem</p>
+                    <p className="card-text">Nam ut hendrerit leo. Aenean vel ipsum nunc. Curabitur in tellus vitae nisi aliquet dapibus non et erat. Pellentesque porta sapien non accumsan dignissim curabitur sagittis nulla sit amet dolor feugiat.</p>
 
-                    <a href="index" className="btn-link has-before">
+                    <Link to="#" className="btn-link has-before">
                       Read More
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </li>
@@ -85,16 +86,16 @@ export default function Plan() {
 
                   <div className="card-content">
                     <h3 className="h3">
-                      <a href="index" className="card-title">
+                      <Link to="#" className="card-title">
                         Plan Title
-                      </a>
+                      </Link>
                     </h3>
 
-                    <p className="card-text">lorem</p>
+                    <p className="card-text">Nam ut hendrerit leo. Aenean vel ipsum nunc. Curabitur in tellus vitae nisi aliquet dapibus non et erat. Pellentesque porta sapien non accumsan dignissim curabitur sagittis nulla sit amet dolor feugiat.</p>
 
-                    <a href="index" className="btn-link has-before">
+                    <Link to="#" className="btn-link has-before">
                       Read More
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </li>
@@ -119,16 +120,16 @@ export default function Plan() {
 
                   <div className="card-content">
                     <h3 className="h3">
-                      <a href="index" className="card-title">
+                      <Link to="#" className="card-title">
                         Plan Title
-                      </a>
+                      </Link>
                     </h3>
 
-                    <p className="card-text">lorem</p>
+                    <p className="card-text">Nam ut hendrerit leo. Aenean vel ipsum nunc. Curabitur in tellus vitae nisi aliquet dapibus non et erat. Pellentesque porta sapien non accumsan dignissim curabitur sagittis nulla sit amet dolor feugiat.</p>
 
-                    <a href="index" className="btn-link has-before">
+                    <Link to="#" className="btn-link has-before">
                       Read More
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </li>
@@ -153,16 +154,16 @@ export default function Plan() {
 
                   <div className="card-content">
                     <h3 className="h3">
-                      <a href="index" className="card-title">
+                      <Link to="#" className="card-title">
                         Plan Title
-                      </a>
+                      </Link>
                     </h3>
 
-                    <p className="card-text">lorem</p>
+                    <p className="card-text">Nam ut hendrerit leo. Aenean vel ipsum nunc. Curabitur in tellus vitae nisi aliquet dapibus non et erat. Pellentesque porta sapien non accumsan dignissim curabitur sagittis nulla sit amet dolor feugiat.</p>
 
-                    <a href="index" className="btn-link has-before">
+                    <Link to="#" className="btn-link has-before">
                       Read More
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </li>
@@ -187,16 +188,16 @@ export default function Plan() {
 
                   <div className="card-content">
                     <h3 className="h3">
-                      <a href="index" className="card-title">
+                      <Link to="#" className="card-title">
                         Plan Title
-                      </a>
+                      </Link>
                     </h3>
 
-                    <p className="card-text">lorem</p>
+                    <p className="card-text">Nam ut hendrerit leo. Aenean vel ipsum nunc. Curabitur in tellus vitae nisi aliquet dapibus non et erat. Pellentesque porta sapien non accumsan dignissim curabitur sagittis nulla sit amet dolor feugiat.</p>
 
-                    <a href="index" className="btn-link has-before">
+                    <Link to="#" className="btn-link has-before">
                       Read More
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </li>

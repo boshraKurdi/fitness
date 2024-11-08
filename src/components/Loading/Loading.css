@@ -14,7 +14,7 @@
   font-size: 3.5rem;
   letter-spacing: 9px;
   font-family: math;
-  color: var(--first-color);
+  color: var(--coquelicot);
 }
 .loader {
     display: block;

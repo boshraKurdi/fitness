@@ -152,7 +152,7 @@
 
   .footer-bottom .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
@@ -251,6 +251,9 @@
   .header.active .btn {
     background-color: var(--coquelicot);
     color: var(--white);
+  }
+  .header .btn-login{
+    display: none !important;
   }
 
   .header.active .btn:is(:hover, :focus) {

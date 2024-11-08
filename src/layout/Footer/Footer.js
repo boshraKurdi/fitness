@@ -12,7 +12,7 @@ import Components from "../../Style/Components/Components";
 export default function Footer() {
   const { MyComponentHeroSubtitleA} = Components();
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact">
       <div
         className="section footer-top has-bg-image"
         style={{ backgroundImage: `url(${Bg_Image})` }}
@@ -30,14 +30,7 @@ export default function Footer() {
             </p>
 
             <div className="wrapper">
-              <img
-                src="./assets/images/footer-clock.png"
-                width="34"
-                height="34"
-                loading="lazy"
-                alt="Clock"
-              />
-
+            
               <ul className="footer-brand-list">
                 <li>
                   <p className="footer-brand-title">Monday - Friday</p>
@@ -60,31 +53,31 @@ export default function Footer() {
             </li>
 
             <li>
-              <a href="index" className="footer-link">
+              <a href="#home" className="footer-link">
                 Home
               </a>
             </li>
 
             <li>
-              <a href="index" className="footer-link">
+              <a href="#about" className="footer-link">
                 About Us
               </a>
             </li>
 
             <li>
-              <a href="#index" className="footer-link">
-                classNamees
+              <a href="#goal" className="footer-link">
+                Goal
               </a>
             </li>
 
             <li>
-              <a href="index" className="footer-link">
-                Blog
+              <a href="#plan" className="footer-link">
+                Plans
               </a>
             </li>
 
             <li>
-              <a href="index" className="footer-link">
+              <a href="#contact" className="footer-link">
                 Contact Us
               </a>
             </li>
@@ -192,25 +185,12 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="container">
           <p className="copyright">
-            &copy; 2022 Fitlife. All Rights Reserved By{" "}
+            &copy; 2024 Fitlife. All By{" "}
             <a href="index" className="copyright-link">
-              codewithsadee.
+              Boshra.
             </a>
           </p>
 
-          <ul className="footer-bottom-list">
-            <li>
-              <a href="index" className="footer-bottom-link has-before">
-                Privacy Policy
-              </a>
-            </li>
-
-            <li>
-              <a href="index" className="footer-bottom-link has-before">
-                Terms & Condition
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </footer>

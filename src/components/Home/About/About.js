@@ -2,6 +2,7 @@ import "./About.css";
 
 import About_5 from '../../../img/about-coach.jpg'
 import About_1 from '../../../img/a-banner.png'
+import { Link } from "react-router-dom";
 export default function About() {
   return (
     <section className="section about" id="about" aria-label="about">
@@ -53,9 +54,9 @@ export default function About() {
               </div>
             </div>
 
-            <a href="index" className="btn btn-primary">
+            <Link to={'#'} className="btn btn-primary">
               Explore More
-            </a>
+            </Link>
           </div>
         </div>
       </div>

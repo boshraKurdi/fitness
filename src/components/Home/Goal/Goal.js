@@ -15,7 +15,7 @@ export default function Goal() {
   return (
     <section
       className="section top has-bg-image"
-      id="class"
+      id="goal"
       aria-label="class"
       style={{ backgroundImage: `url(${Goal_1})` }}
     >
@@ -77,7 +77,7 @@ export default function Goal() {
                       </MyComponentHeroSubtitleH3>
                     </div>
 
-                    <p className="card-text">lorem</p>
+                    <p className="card-text">Nam ut hendrerit leo. Aenean vel ipsum nunc. Curabitur in tellus vitae nisi aliquet dapibus non et erat. Pellentesque porta sapien non accumsan dignissim curabitur sagittis nulla sit amet dolor feugiat.</p>
                   </div>
                 </div>
               </li>
@@ -114,7 +114,7 @@ export default function Goal() {
                       </MyComponentHeroSubtitleH3>
                     </div>
 
-                    <p className="card-text">lorem</p>
+                    <p className="card-text">Nam ut hendrerit leo. Aenean vel ipsum nunc. Curabitur in tellus vitae nisi aliquet dapibus non et erat. Pellentesque porta sapien non accumsan dignissim curabitur sagittis nulla sit amet dolor feugiat.</p>
                   </div>
                 </div>
               </li>
@@ -151,7 +151,7 @@ export default function Goal() {
                       </MyComponentHeroSubtitleH3>
                     </div>
 
-                    <p className="card-text">lorem</p>
+                    <p className="card-text">Nam ut hendrerit leo. Aenean vel ipsum nunc. Curabitur in tellus vitae nisi aliquet dapibus non et erat. Pellentesque porta sapien non accumsan dignissim curabitur sagittis nulla sit amet dolor feugiat.</p>
                   </div>
                 </div>
               </li>
@@ -188,7 +188,7 @@ export default function Goal() {
                       </MyComponentHeroSubtitleH3>
                     </div>
 
-                    <p className="card-text">lorem</p>
+                    <p className="card-text">Nam ut hendrerit leo. Aenean vel ipsum nunc. Curabitur in tellus vitae nisi aliquet dapibus non et erat. Pellentesque porta sapien non accumsan dignissim curabitur sagittis nulla sit amet dolor feugiat.</p>
                   </div>
                 </div>
               </li>
@@ -225,7 +225,7 @@ export default function Goal() {
                       </MyComponentHeroSubtitleH3>
                     </div>
 
-                    <p className="card-text">lorem</p>
+                    <p className="card-text">Nam ut hendrerit leo. Aenean vel ipsum nunc. Curabitur in tellus vitae nisi aliquet dapibus non et erat. Pellentesque porta sapien non accumsan dignissim curabitur sagittis nulla sit amet dolor feugiat.</p>
                   </div>
                 </div>
               </li>

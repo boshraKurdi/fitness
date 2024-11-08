@@ -18,6 +18,7 @@ export default function Header() {
   function HandelNav(){
     setOpen(prev => !prev);
   }
+  const [activeLink, setActiveLink] = useState('home');
   return (
     <MyComponentHeader className="header active">
       <div className="container">
@@ -29,33 +30,38 @@ export default function Header() {
         <nav className={open ? (value === 'dark' ? 'navbar open dark' : 'navbar open light') : (value === 'dark'? "navbar dark" : 'navbar light')}>
           <ul className="navbar-list">
             <li onClick={()=>{setOpen(false)}}>
-              <Link  to="/fitness#home" className={value === 'dark' ? "navbar-link dark active" : 'navbar-link light active'}>
+              <a href="#home" onClick={()=>{setActiveLink('home')}} className={activeLink === 'home' ? `navbar-link ${value} active` : `navbar-link ${value}`}>
                 Home
-              </Link>{" "}
+              </a>{" "}
             </li>
 
             <li onClick={()=>{setOpen(false)}}>
-              <Link to="/fitness#about" className={value === 'dark' ? "navbar-link dark" : 'navbar-link light'}>
+              <a href="#about" onClick={()=>{setActiveLink('about')}} className={activeLink === 'about' ? `navbar-link ${value} active` : `navbar-link ${value}`}>
                 About Us
-              </Link>{" "}
+              </a>{" "}
             </li>
 
             <li onClick={()=>{setOpen(false)}}>
-              <Link to="/fitness#class" className={value === 'dark' ? "navbar-link dark" : 'navbar-link light'}>
-                classs
-              </Link>
+              <a href="#goal" onClick={()=>{setActiveLink('goal')}} className={activeLink === 'goal' ? `navbar-link ${value} active` : `navbar-link ${value}`}>
+                Goals
+              </a>
             </li>
 
             <li onClick={()=>{setOpen(false)}}>
-              <Link  to="/fitness#blog" className={value === 'dark' ? "navbar-link dark" : "navbar-link light"}>
-                Blog
-              </Link>
+              <a  href="#plan" onClick={()=>{setActiveLink('plan')}} className={activeLink === 'plan' ? `navbar-link ${value} active` : `navbar-link ${value}`}>
+                Plans
+              </a>
             </li>
 
             <li onClick={()=>{setOpen(false)}}>
-              <Link  to="/fitness" className={value === 'dark' ? "navbar-link dark" : "navbar-link light"}>
+              <a  href="#contact" onClick={()=>{setActiveLink('contact')}} className={activeLink === 'contact' ? `navbar-link ${value} active` : `navbar-link ${value}`}>
                 Contact Us
-              </Link>
+              </a>
+            </li>
+            <li onClick={()=>{setOpen(false)}}>
+            <a href="/login" className={`navbar-link ${value} btn-login`}>
+                Login
+              </a>
             </li>
             <li onClick={()=>{setOpen(false)}}>
             <Select style={{display: 'flex' ,width: 'fit-content' , margin: 'auto'}} value={value} onChange={(event) => dispatch(SetMode(event.target.value))}>

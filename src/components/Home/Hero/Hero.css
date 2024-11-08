@@ -3,6 +3,7 @@
   text-align: center;
   padding-block-end: 0;
   overflow: hidden;
+  margin-top: 3rem;
 }
 
 .hero::after {

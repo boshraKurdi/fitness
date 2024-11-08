@@ -1,5 +1,7 @@
-.header .btn { display: none; }
-
+.header .btn  { display: none; }
+.header .btn-login{
+display: block;
+}
 .header {
   /* background-color: var(--rich-black-fogra-29-1); dark mode */
   /* box-shadow: 0 0 13px var(--white_20); dark mode */
