@@ -59,9 +59,9 @@ export default function Header() {
               </a>
             </li>
             <li onClick={()=>{setOpen(false)}}>
-            <a href="/login" className={`navbar-link ${value} btn-login`}>
+            <Link to="/login" className={`navbar-link ${value} btn-login`}>
                 Login
-              </a>
+              </Link>
             </li>
             <li onClick={()=>{setOpen(false)}}>
             <Select style={{display: 'flex' ,width: 'fit-content' , margin: 'auto'}} value={value} onChange={(event) => dispatch(SetMode(event.target.value))}>
