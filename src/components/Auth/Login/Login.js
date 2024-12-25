@@ -32,7 +32,7 @@ export default function Login({ ChangeSetting }) {
         <div className="line"></div>
       </div>
       <div className="social-icons">
-        <a href="#" aria-label="Log in with Google" className="icon">
+        <a href="a" aria-label="Log in with Google" className="icon">
           <GoogleIcon />
         </a>
       </div>

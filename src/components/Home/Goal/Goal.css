@@ -39,10 +39,24 @@
 
 .class-card .card-title {
   transition: var(--transition-1);
+  display: flex;
+  align-items: center;
 }
-
+.card-title .icon_go{
+  color:#444 ;
+  transition: var(--transition-1);
+  margin-left: .5rem;
+  margin-top: .4rem;
+  font-size: 2.6rem;
+}
 .class-card .card-title:is(:hover, :focus) {
   color: var(--coquelicot);
+}
+.class-card .card-title:is(:hover, :focus) .icon_go{
+  color: var(--coquelicot); 
+  transition: 0.5s;
+  transform: translateX(10px);
+
 }
 
 .class-card .card-text {

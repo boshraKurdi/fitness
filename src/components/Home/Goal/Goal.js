@@ -5,11 +5,13 @@ import Components from "../../../Style/Components/Components";
 import Goal_1 from "../../../img/hero-bg.png";
 import Goal_3 from "../../../img/class-i-2.png";
 import { Swiper, SwiperSlide } from "swiper/react";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { Link } from "react-router-dom";
 export default function Goal() {
   const { MyComponentHeroSubtitleH3 } = Components();
   return (
@@ -71,9 +73,9 @@ export default function Goal() {
                       />
 
                       <MyComponentHeroSubtitleH3 className="h3">
-                        <a href="index" className="card-title">
-                          Goal Title
-                        </a>
+                        <Link to="/goalShow/1" className="card-title">
+                          Goal Title <ArrowForwardIcon className="icon_go"/>
+                        </Link>
                       </MyComponentHeroSubtitleH3>
                     </div>
 
@@ -108,9 +110,10 @@ export default function Goal() {
                       />
 
                       <MyComponentHeroSubtitleH3 className="h3">
-                        <a href="index" className="card-title">
-                          Goal Title
-                        </a>
+                        <Link to="/goalShow/1" className="card-title">
+                          Goal Title <ArrowForwardIcon className="icon_go"/>
+                        </Link>
+                        
                       </MyComponentHeroSubtitleH3>
                     </div>
 
@@ -145,9 +148,9 @@ export default function Goal() {
                       />
 
                       <MyComponentHeroSubtitleH3 className="h3">
-                        <a href="index" className="card-title">
-                          Goal Title
-                        </a>
+                      <Link to="/goalShow/1" className="card-title">
+                          Goal Title <ArrowForwardIcon className="icon_go"/>
+                        </Link>
                       </MyComponentHeroSubtitleH3>
                     </div>
 
@@ -182,9 +185,9 @@ export default function Goal() {
                       />
 
                       <MyComponentHeroSubtitleH3 className="h3">
-                        <a href="index" className="card-title">
-                          Goal Title
-                        </a>
+                      <Link to="/goalShow/1" className="card-title">
+                          Goal Title <ArrowForwardIcon className="icon_go"/>
+                        </Link>
                       </MyComponentHeroSubtitleH3>
                     </div>
 
@@ -219,9 +222,9 @@ export default function Goal() {
                       />
 
                       <MyComponentHeroSubtitleH3 className="h3">
-                        <a href="index" className="card-title">
-                          Goal Title
-                        </a>
+                      <Link to="/goalShow/1" className="card-title">
+                          Goal Title <ArrowForwardIcon className="icon_go"/>
+                        </Link>
                       </MyComponentHeroSubtitleH3>
                     </div>
 

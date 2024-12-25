@@ -4,17 +4,41 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { useSelector } from "react-redux";
 import Loading from "../components/Loading/Loading";
+import E404 from "../Pages/E404/E404";
+const GoalDetails = lazy(() => import("../Pages/GoalDetails/GoalDetails"));
+const Main =  lazy(() => import("../Pages/Main"));
 const Home = lazy(() => import("../Pages/Home"));
-const Auth = lazy(() => import("../Auth/Auth"));
+const Auth = lazy(() => import("../Pages/Auth/Auth"));
+const regex = /^[0-9]+$/;
 const router = createBrowserRouter([
   {
-    path: "/fitness",
-    element:  <Suspense fallback={<Loading />}><Home /></Suspense>,
-  },
-  {
-    path: "/login",
-    element:  <Suspense fallback={<Loading />}><Auth /></Suspense>,
-  },
+    path: "/",
+    element:  <Suspense fallback={<Loading />}><Main /></Suspense>,
+    errorElement: <E404 />,
+    children:[
+      {
+        path: "fitness",
+        element:  <Suspense fallback={<Loading />}><Home /></Suspense>,
+      },
+      {
+        path: "login",
+        element:  <Suspense fallback={<Loading />}><Auth /></Suspense>,
+      },
+      {
+        path: "goalShow/:id",
+        element:  <Suspense fallback={<Loading />}><GoalDetails /></Suspense>,
+        loader : ({params}) =>{
+          if (!regex.test(params.id)) {
+            throw new Response("bad request" , {
+              statusText: "goal not found" ,
+              status: 400
+            })
+          }
+          return true;
+        }
+      },
+    ]
+  }
 ]);
 export default function AppRouter() {
   const { value } = useSelector((state) => state.mode);

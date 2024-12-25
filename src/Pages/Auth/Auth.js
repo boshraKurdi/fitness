@@ -1,7 +1,7 @@
 import "./Auth.css";
-import imgAuth from "../img/img-login.svg";
-import Login from "../components/Auth/Login/Login";
-import SignUp from "../components/Auth/SignUp/SignUp";
+import imgAuth from "../../img/img-login.svg";
+import Login from "../../components/Auth/Login/Login";
+import SignUp from "../../components/Auth/SignUp/SignUp";
 import { useState } from "react";
 export default function Auth() {
   const [box, setBox] = useState(true);

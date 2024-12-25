@@ -389,6 +389,7 @@ label:last-child span {
     justify-content: center;
     align-items: center;
     margin-left: 10rem;
+    margin-top: 7rem;
   }
 
   .login__img{

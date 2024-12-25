@@ -62,7 +62,7 @@ export default function SignUp({ ChangeSetting }) {
       </div>
       <div className="social-icons">
         <a
-          href="#"
+          href="a"
           aria-label="Log in with Google"
           className="icon"
         >
