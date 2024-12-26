@@ -1,16 +1,18 @@
 import { Link } from "react-router-dom";
 import "./Header.css";
-import Select from "@mui/material/Select";
-import MenuItem from "@mui/material/MenuItem";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import { useDispatch, useSelector } from "react-redux";
 import Components from "../../Style/Components/Components";
-import { useTheme } from "@mui/material";
+import { IconButton, useTheme } from "@mui/material";
 import { SetMode } from "../../Store/Mode/ModeSlice";
 import { useState } from "react";
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import Profile from '../../components/Profile/Profile'
 export default function Header() {
   const [ open , setOpen ] = useState(false)
   const theme = useTheme()
+  const { check } = useSelector((state) => state.auth)
   const { MyComponentHeader} = Components();
   const dispatch = useDispatch();
   // change mode 
@@ -23,8 +25,8 @@ export default function Header() {
     <MyComponentHeader className="header active">
       <div className="container">
         <a href="index" className="logo">
-          <FitnessCenterIcon className="ion-icon" />
-          <span style={{color:theme.palette.primary.title}} className="span">Fitlife</span>
+          <FitnessCenterIcon style={{fontSize: '2.2em' , marginRight:'.5rem'}} className="ion-icon" />
+          <span style={{color:theme.palette.primary.title , fontSize: '2rem'}} className="span">Fitlife</span>
         </a>
 
         <nav className={open ? (value === 'dark' ? 'navbar open dark' : 'navbar open light') : (value === 'dark'? "navbar dark" : 'navbar light')}>
@@ -64,16 +66,16 @@ export default function Header() {
               </Link>
             </li>
             <li onClick={()=>{setOpen(false)}}>
-            <Select style={{display: 'flex' ,width: 'fit-content' , margin: 'auto'}} value={value} onChange={(event) => dispatch(SetMode(event.target.value))}>
-              <MenuItem style={{color:theme.palette.primary.title}} value="light">light</MenuItem>
-              <MenuItem style={{color:theme.palette.primary.title}} value="dark">dark</MenuItem>
-            </Select>
+              <IconButton>
+              {value === 'dark' ? <DarkModeIcon style={{cursor:'pointer'}} value={value} onClick={() => dispatch(SetMode('light'))} /> :
+              <LightModeIcon style={{cursor:'pointer'}} onClick={() => dispatch(SetMode('dark'))} />}
+              </IconButton>
             </li>
           </ul>
         </nav>
-        <Link to="/login" className="btn btn-secondary">
+        {check ? <Profile /> : <Link to="/login" className="btn btn-secondary">
           Join Now
-        </Link>
+        </Link>}
         <button onClick={HandelNav} className="nav-open-btn">
           <span className="line"></span>
           <span className="line"></span>

@@ -15,4 +15,4 @@
   border-radius: var(--radius-8);
 }
 
-.section-title { margin-block: 18px 35px; }
+.section-title { margin-block: 18px 35px;    font-size: 3rem; }

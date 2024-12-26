@@ -40,14 +40,15 @@
 .class-card .card-title {
   transition: var(--transition-1);
   display: flex;
+  font-size: 1.4rem;
+  font-weight: 600;
   align-items: center;
 }
 .card-title .icon_go{
   color:#444 ;
   transition: var(--transition-1);
   margin-left: .5rem;
-  margin-top: .4rem;
-  font-size: 2.6rem;
+  font-size: 1.4rem;
 }
 .class-card .card-title:is(:hover, :focus) {
   color: var(--coquelicot);
@@ -61,7 +62,9 @@
 
 .class-card .card-text {
   color: var(--sonic-silver);
-  font-size: var(--fs-6);
+  font-size:0.8rem;
+  font-family: cursive;
+    line-height: 1.8;
   margin-block: 16px 12px;
 }
 
@@ -69,7 +72,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: var(--ff-catamaran);
+  /* font-family: var(--ff-catamaran); */
   color: var(--rich-black-fogra-29-1);
   font-size: var(--fs-6);
   font-weight: var(--fw-800);

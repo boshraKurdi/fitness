@@ -12,7 +12,7 @@ const GoalDetails = () => {
       <div className="product-imgs">
       <div style={{justifyContent:'center' , display:'flex'}} className="img-display">
             <div style={{width:'100%' , height:'400px'}} className="img-showcase">
-              <img style={{borderRadius:'50%' , width:'75%', minWidth:'400px' , objectFit:'contain'}} src={Img1} alt="shoe" />
+              <img style={{width:'75%', minWidth:'400px' , objectFit:'contain'}} src={Img1} alt="shoe" />
           </div>
         </div>
       </div>

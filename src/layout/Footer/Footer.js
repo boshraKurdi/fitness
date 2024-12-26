@@ -9,10 +9,12 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import Bg_Image from "../../img/hero-bg.png";
 import Components from "../../Style/Components/Components";
+import { useSelector } from "react-redux";
 export default function Footer() {
   const { MyComponentHeroSubtitleA} = Components();
+  const { value } = useSelector((state) => state.mode)
   return (
-    <footer className="footer" id="contact">
+    <footer className={`footer ${value}`} id="contact">
       <div
         className="section footer-top has-bg-image"
         style={{ backgroundImage: `url(${Bg_Image})` }}
@@ -35,13 +37,13 @@ export default function Footer() {
                 <li>
                   <p className="footer-brand-title">Monday - Friday</p>
 
-                  <p>7:00Am - 10:00Pm</p>
+                  <p className="footer_p">7:00Am - 10:00Pm</p>
                 </li>
 
                 <li>
                   <p className="footer-brand-title">Saturday - Sunday</p>
 
-                  <p>7:00Am - 2:00Pm</p>
+                  <p className="footer_p">7:00Am - 2:00Pm</p>
                 </li>
               </ul>
             </div>

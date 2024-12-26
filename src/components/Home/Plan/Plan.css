@@ -29,9 +29,7 @@
   bottom: 0;
   left: 0;
   padding: 8px 20px;
-  font-size: var(--fs-6);
-  font-weight: var(--fw-500);
-  text-transform: uppercase;
+  font-family: cursive;
 }
 
 .blog-card .card-content {
@@ -41,6 +39,8 @@
 .blog-card .card-title {
   transition: var(--transition-1);
   color: var(--rich-black-fogra-29-1);
+  font-size: 1.4rem;
+    font-weight: 600;
 }
 
 .blog-card .card-title:is(:hover, :focus) {
@@ -48,9 +48,11 @@
 }
 
 .blog-card .card-text {
-  font-size: var(--fs-6);
-  margin-block: 8px 12px;
-  color: var(--rich-black-fogra-29-1);
+  color: var(--sonic-silver);
+    font-size: 0.8rem;
+    font-family: cursive;
+    line-height: 1.8;
+    margin-block: 16px 12px;
 }
 
 .blog-card .btn-link {

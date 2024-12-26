@@ -22,7 +22,7 @@ display: block;
 
 .logo {
   font-family: var(--ff-catamaran);
-  font-size: 3.5rem;
+  /* font-size: 3.5rem; */
   font-weight: var(--fw-900);
   display: flex;
   align-items: center;
@@ -31,7 +31,7 @@ display: block;
 
 .logo .ion-icon {
   color: var(--coquelicot);
-  font-size: 40px;
+  /* font-size: 40px; */
   transform: rotate(90deg) translate(-2px, -5px);
 }
 
@@ -91,7 +91,7 @@ display: block;
   right: 15px;
   background-color: var(--rich-black-fogra-29-1);
   color: var(--white);
-  font-size: 40px;
+  /* font-size: 40px; */
   padding: 10px;
   border-radius: var(--radius-8);
 }
@@ -99,7 +99,8 @@ display: block;
 .navbar-link {
   /* color: var(--white); dark mode  */
   font-family: var(--ff-catamaran);
-  font-size: var(--fs-6);
+  font-size: 0.9rem;
+
   text-align: center;
   padding-block: 10px;
   margin-block-end: 20px;

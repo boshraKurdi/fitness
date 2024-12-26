@@ -20,14 +20,16 @@
   padding-inline: 0; 
   padding-block-start: var(--section-padding); 
   margin-block-end: 90px;
+  text-align: left;
 }
 
 .hero-subtitle {
-  background-color: var(--white_10);
+  background-color: var(--coquelicot_20);
   color: var(--white);
+  padding: 13px 10px;
   width: fit-content;
-  margin-inline: auto;
-  padding: 5px;
+  /* margin-inline: auto; */
+
   padding-inline-end: 15px;
   border-radius: var(--radius-8);
 }
@@ -42,15 +44,19 @@
 
 .hero-title {
   margin-block: 30px 8px;
+  font-size: 3rem;
 }
 
 .hero .section-text {
   margin-block-end: 40px;
+  line-height: 1.5;
+  font-family: cursive;
+  color: var(--sonic-silver);
 }
 
-.hero .btn {
+/* .hero .btn {
   margin-inline: auto;
-}
+} */
 
 .hero-banner {
   position: relative;
