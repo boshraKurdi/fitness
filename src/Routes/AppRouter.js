@@ -9,6 +9,7 @@ const GoalDetails = lazy(() => import("../Pages/GoalDetails/GoalDetails"));
 const Main =  lazy(() => import("../Pages/Main"));
 const Home = lazy(() => import("../Pages/Home"));
 const Auth = lazy(() => import("../Pages/Auth/Auth"));
+const DashBaord = lazy(() => import("../Pages/DashBaord/DashBaord"));
 const regex = /^[0-9]+$/;
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
           }
           return true;
         }
+      },
+      {
+        path: "myPlans",
+        element:  <Suspense fallback={<Loading />}><DashBaord /></Suspense>,
       },
     ]
   }

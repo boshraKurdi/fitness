@@ -84,7 +84,7 @@ export default function Profile() {
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
         <MenuItem onClick={handleClose}>
-          <Link style={{display: 'flex' , alignItems: 'center' , width: '100%'}} to='/user'>
+          <Link style={{display: 'flex' , alignItems: 'center' , width: '100%'}} to='/myPlans'>
             <Avatar><Home /></Avatar> My Plans
           </Link>
         </MenuItem>
